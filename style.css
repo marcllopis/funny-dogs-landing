@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+/* Styles applied to main header so it will have a gradient and a flex behaviour */
+.main-header {
+  background: rgb(217, 221, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 221, 255, 1) 0%,
+    rgba(30, 255, 175, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+}
+
+section p {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  padding: 10%;
+  text-align: justify;
+}
+
+/* CSS for the articles section */
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+/* TODO: check if flex-direction column simplifies this code */
+.box {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-div {
+  width: 300px;
+}
+
+.img-div:hover {
+  width: 350px;
+}
+
+.box-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box-btn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  width: 300px;
+  margin-top: 10px;
+}
+.box-btn:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+.box-btn:active {
+  position: relative;
+  top: 1px;
+}
